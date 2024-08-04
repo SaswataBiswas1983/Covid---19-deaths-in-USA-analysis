@@ -11,7 +11,7 @@ This dataset shows health conditions and contributing causes mentioned in conjun
 3. Changed datatypes for better understanding
 ## Repository Structure
 1. Project Management: Contains the project brief which outlines the objective and expectations of the analysis.
-2. Data: Separated into two subfolders Original Data and Prepared Data.
+2. Data: Separated into two subfolders Original Data and Prepared Data. (Only small files have been included based on GitHub's Limitations)
 3. Scripts: The Jupyter notebooks containing the coding for the analysis.
 4. Analysis: The Visualizations folder contains the visualizations used for developing and explaining insights.
 5. Sent to Client: Includes the Tableau Public storyboard as a PDF file.
@@ -22,5 +22,5 @@ From the categorical plots, influenza and pneumonia and cardiovascular diseases 
 The distribution shows older age groups have higher death counts for almost all conditions. Specially, conditions such as diabetes, ischenic heart disease, and cerebrovascular diseases impact older age groups.
 ### 3. What factor are most predictive of COVID-19 death rates?
 Based on analysis, the most predictive factors are Number of Mentions of conditins, Age Group and specific high-risk conditions such as respiratory and cariovasular diseases. These factors represents strong correlations with COVID-19 death rates.
-## Hypothesis 2: 
+## Hypothesis 1: 
 ### If condition like influenza and pneumonia, vascular and unspecified dementia, diabetes, ischemic heart disease, or renal failure, then they will have a higher COVID-19 death rate compared to with other conditions. 
