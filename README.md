@@ -22,5 +22,18 @@ From the categorical plots, influenza and pneumonia and cardiovascular diseases 
 The distribution shows older age groups have higher death counts for almost all conditions. Specially, conditions such as diabetes, ischenic heart disease, and cerebrovascular diseases impact older age groups.
 ### 3. What factor are most predictive of COVID-19 death rates?
 Based on analysis, the most predictive factors are Number of Mentions of conditins, Age Group and specific high-risk conditions such as respiratory and cariovasular diseases. These factors represents strong correlations with COVID-19 death rates.
-## Hypothesis 1: 
+## Hypothesis : 
 ### If condition like influenza and pneumonia, vascular and unspecified dementia, diabetes, ischemic heart disease, or renal failure, then they will have a higher COVID-19 death rate compared to with other conditions. 
+## Tools used:
+1. Python
+2. Excel
+3. Tableau
+## Analysis Sections
+### 1. Sourcing Open Data: Looking for data and cleaning it for further analysis
+### 2. Correlations: Exploring relationships between different variables using heatmaps and scatterplots
+### 3. Geographic Analysis: Using Geo Visuals (Chloropeth Maps) to uinderstand the distribution of deaths across the US states
+### 4. Linear Regression Analysis: Developing a regression model to predict COVID-19 deaths based on the number of mentions of conditions.
+### 5. Cluster Analysis: Checking clusters of the tope five conditions leading to Covid deaths
+### 6. Time Series Analysis: Using Time series to see the seasonality of the top 5 Conditions leading to Covid deaths
+## Conclusion and recommendation:
+The analysis supported the the Hypothesis that the top 5 conditions are at a high risk and allocation of medical resources should be priority for people who fall under these categories of diseases.
