@@ -1,0 +1,2202 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='States vs Deaths' inline='true' name='federated.0yu1iot1c8n6qm16rbtwy0s93gxa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Merge Data' name='textscan.0caeimx05xwrab13z5wsa1nfqtco'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/02 Data/Prepared Data/Merge Data.csv' dataRefreshTime='' directory='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/02 Data/Prepared Data' filename='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/08g3dim1fvpggr14coxrb0rpp6p0/Merge Data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0caeimx05xwrab13z5wsa1nfqtco' name='Merge Data.csv' table='[Merge Data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:E256:no:A1:E256:1' header='yes' locale='en_001' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='string' name='Condition' ordinal='1' />
+            <column datatype='integer' name='COVID-19 Deaths' ordinal='2' />
+            <column datatype='integer' name='Population' ordinal='3' />
+            <column datatype='real' name='Death Rate per 100,000' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0caeimx05xwrab13z5wsa1nfqtco' name='Merge Data.csv' table='[Merge Data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:E256:no:A1:E256:1' header='yes' locale='en_001' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='string' name='Condition' ordinal='1' />
+            <column datatype='integer' name='COVID-19 Deaths' ordinal='2' />
+            <column datatype='integer' name='Population' ordinal='3' />
+            <column datatype='real' name='Death Rate per 100,000' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Merge Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E256:no:A1:E256:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>765</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Merge Data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_R001_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Condition]</local-name>
+            <parent-name>[Merge Data.csv]</parent-name>
+            <remote-alias>Condition</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_R001_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COVID-19 Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COVID-19 Deaths]</local-name>
+            <parent-name>[Merge Data.csv]</parent-name>
+            <remote-alias>COVID-19 Deaths</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Merge Data.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death Rate per 100,000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Death Rate per 100,000]</local-name>
+            <parent-name>[Merge Data.csv]</parent-name>
+            <remote-alias>Death Rate per 100,000</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Condition]' role='dimension' semantic-role='' type='nominal' />
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[Population]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Merge Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_1i4rlte08ndmob18y583x0dpj43m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/05/2024 01:50:18 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Merge Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Merge Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COVID-19 Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[COVID-19 Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COVID-19 Deaths</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Merge Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>254</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Merge Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Death Rate per 100,000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Death Rate per 100,000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Death Rate per 100,000</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Merge Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>255</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Merge Data.csv' id='Merge Data.csv_4DFFF019A4CB478C9BC03F5B341A38E7'>
+            <properties context=''>
+              <relation connection='textscan.0caeimx05xwrab13z5wsa1nfqtco' name='Merge Data.csv' table='[Merge Data#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:E256:no:A1:E256:1' header='yes' locale='en_001' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='string' name='Condition' ordinal='1' />
+                  <column datatype='integer' name='COVID-19 Deaths' ordinal='2' />
+                  <column datatype='integer' name='Population' ordinal='3' />
+                  <column datatype='real' name='Death Rate per 100,000' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Covid_2020 (2)' inline='true' name='federated.0190g4o1li681f18f0x7m12uu5jr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Covid_2020' name='textscan.0nvcdhs13wh1yp1aq7jf70n0e3xp'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/02 Data/Prepared Data/Covid_2020.csv' dataRefreshTime='' directory='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/02 Data/Prepared Data' filename='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/13t1bu60uq80ah1e5045h0vvlxoh/Covid_2020.csv.xlsx' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0nvcdhs13wh1yp1aq7jf70n0e3xp' name='Covid_2020.csv' table='[C:\Users\Lenovo\Desktop\Career Foundry\Achievement 6\02 Data\Prepared Data\Covid_2020#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:J10001:no:A1:J10001:1' header='yes' locale='en_001' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='string' name='Condition Group' ordinal='3' />
+            <column datatype='string' name='Condition' ordinal='4' />
+            <column datatype='string' name='Age Group' ordinal='5' />
+            <column datatype='real' name='COVID-19 Deaths' ordinal='6' />
+            <column datatype='real' name='Number of Mentions' ordinal='7' />
+            <column datatype='integer' name='Cluster' ordinal='8' />
+            <column datatype='date' name='Date' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0nvcdhs13wh1yp1aq7jf70n0e3xp' name='Covid_2020.csv' table='[C:\Users\Lenovo\Desktop\Career Foundry\Achievement 6\02 Data\Prepared Data\Covid_2020#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:J10001:no:A1:J10001:1' header='yes' locale='en_001' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='string' name='Condition Group' ordinal='3' />
+            <column datatype='string' name='Condition' ordinal='4' />
+            <column datatype='string' name='Age Group' ordinal='5' />
+            <column datatype='real' name='COVID-19 Deaths' ordinal='6' />
+            <column datatype='real' name='Number of Mentions' ordinal='7' />
+            <column datatype='integer' name='Cluster' ordinal='8' />
+            <column datatype='date' name='Date' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J10001:no:A1:J10001:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_001&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition Group]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Condition Group</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Condition</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age Group]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Age Group</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COVID-19 Deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COVID-19 Deaths]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>COVID-19 Deaths</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Mentions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number of Mentions]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Number of Mentions</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cluster]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Cluster</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Covid_2020.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Age Group]' role='dimension' type='nominal' />
+      <column datatype='real' default-format='n#,##0;-#,##0' name='[COVID-19 Deaths]' role='measure' type='quantitative' />
+      <column datatype='date' datatype-customized='true' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Covid_2020.csv' datatype='table' name='[__tableau_internal_object_id__].[Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1]' role='measure' type='quantitative' />
+      <column-instance column='[Age Group]' derivation='None' name='[none:Age Group:nk]' pivot='key' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_102uxil0seyfi11df8spi1j7jzno.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/05/2024 01:55:20 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition Group</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age Group</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COVID-19 Deaths</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[COVID-19 Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COVID-19 Deaths</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>570</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Mentions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Number of Mentions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Mentions</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>546</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cluster]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cluster</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Covid_2020.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Age Group:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Not stated&quot;</bucket>
+            </map>
+            <map to='#396794'>
+              <bucket>&quot;85+&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;75-84&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;65-74&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;55-64&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;45-54&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;35-44&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;25-34&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;0-24&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;West Virginia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mississippi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Idaho&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vermont&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South Dakota&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;North Dakota&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arkansas&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Covid_2020.csv' id='Covid_2020.csv_8EDA65A8177840E8BCE64E2882A7BDE1'>
+            <properties context=''>
+              <relation connection='textscan.0nvcdhs13wh1yp1aq7jf70n0e3xp' name='Covid_2020.csv' table='[C:\Users\Lenovo\Desktop\Career Foundry\Achievement 6\02 Data\Prepared Data\Covid_2020#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:J10001:no:A1:J10001:1' header='yes' locale='en_001' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Month' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='string' name='Condition Group' ordinal='3' />
+                  <column datatype='string' name='Condition' ordinal='4' />
+                  <column datatype='string' name='Age Group' ordinal='5' />
+                  <column datatype='real' name='COVID-19 Deaths' ordinal='6' />
+                  <column datatype='real' name='Number of Mentions' ordinal='7' />
+                  <column datatype='integer' name='Cluster' ordinal='8' />
+                  <column datatype='date' name='Date' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Age Group Deaths'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Covid_2020 (2)' name='federated.0190g4o1li681f18f0x7m12uu5jr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0190g4o1li681f18f0x7m12uu5jr'>
+            <column datatype='string' name='[Age Group]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[COVID-19 Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Age Group]' derivation='None' name='[none:Age Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[COVID-19 Deaths]' derivation='Sum' name='[sum:COVID-19 Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Age Group:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age Group:nk]' />
+              <groupfilter function='member' level='[none:Age Group:nk]' member='&quot;Not stated&quot;' />
+            </groupfilter>
+          </filter>
+          <natural-sort column='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Age Group:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Age Group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' scope='rows' value='Deaths' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='-90' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]</rows>
+        <cols>[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Age Group:nk]</cols>
+      </table>
+      <simple-id uuid='{24594354-CDA8-4A1B-98AE-09C08C0FBD8A}' />
+    </worksheet>
+    <worksheet name='Condition Vs Death'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Covid_2020 (2)' name='federated.0190g4o1li681f18f0x7m12uu5jr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0190g4o1li681f18f0x7m12uu5jr'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[COVID-19 Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Condition Group]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Condition Group]' derivation='None' name='[none:Condition Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Condition]' derivation='None' name='[none:Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[COVID-19 Deaths]' derivation='Sum' name='[sum:COVID-19 Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Condition Group:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Condition Group:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Condition Group:nk]' member='&quot;All other conditions and causes (residual)&quot;' />
+                <groupfilter function='member' level='[none:Condition Group:nk]' member='&quot;COVID-19&quot;' />
+                <groupfilter function='member' level='[none:Condition Group:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Condition:nk]' direction='DESC' using='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' />
+          <slices>
+            <column>[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Condition Group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' />
+              <size column='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]</rows>
+        <cols>[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Condition:nk]</cols>
+      </table>
+      <simple-id uuid='{BD5569E5-6EE1-4C7D-BD40-D1DD712B91E5}' />
+    </worksheet>
+    <worksheet name='Death'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='States vs Deaths' name='federated.0yu1iot1c8n6qm16rbtwy0s93gxa' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0yu1iot1c8n6qm16rbtwy0s93gxa'>
+            <column datatype='integer' name='[COVID-19 Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[COVID-19 Deaths]' derivation='Sum' name='[sum:COVID-19 Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Longitude (generated)]' field-type='quantitative' max='-4973595.7983010784' min='-16280475.454870444' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Latitude (generated)]' field-type='quantitative' max='7514065.628545966' min='2290000.9534616284' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:COVID-19 Deaths:qk]' />
+              <lod column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[none:State:nk]' />
+              <geometry column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Latitude (generated)]</rows>
+        <cols>[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{08753000-EF63-4933-B50E-2CCA2A31ED7F}' />
+    </worksheet>
+    <worksheet name='Intro'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7'>Map of the USA with Population</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='States vs Deaths' name='federated.0yu1iot1c8n6qm16rbtwy0s93gxa' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0yu1iot1c8n6qm16rbtwy0s93gxa'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Longitude (generated)]' field-type='quantitative' max='33662021.671984732' min='24970295.835752971' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Latitude (generated)]' field-type='quantitative' max='6615241.4820641242' min='2564013.3197317901' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:Population:qk]' />
+              <lod column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[none:State:nk]' />
+              <geometry column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Latitude (generated)]</rows>
+        <cols>[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F1A076CD-11E4-42CE-B7D2-3778F8820701}' />
+    </worksheet>
+    <worksheet name='Month Death'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Monthly Deaths</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Covid_2020 (2)' name='federated.0190g4o1li681f18f0x7m12uu5jr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0190g4o1li681f18f0x7m12uu5jr'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[COVID-19 Deaths]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[COVID-19 Deaths]' derivation='Sum' name='[sum:COVID-19 Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]</rows>
+        <cols>[federated.0190g4o1li681f18f0x7m12uu5jr].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B4C11297-506A-438F-BB71-1969885D5BA9}' />
+    </worksheet>
+    <worksheet name='Population'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='States vs Deaths' name='federated.0yu1iot1c8n6qm16rbtwy0s93gxa' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0yu1iot1c8n6qm16rbtwy0s93gxa'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Longitude (generated)]' field-type='quantitative' max='33451398.376814812' min='25217726.142384835' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Latitude (generated)]' field-type='quantitative' max='6685754.8953088829' min='2264991.3806719836' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:Population:qk]' />
+              <lod column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[none:State:nk]' />
+              <geometry column='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Latitude (generated)]</rows>
+        <cols>[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{3AD7DE3D-6C96-4609-9659-E2295C480A07}' />
+    </worksheet>
+    <worksheet name='State Deaths'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Covid_2020 (2)' name='federated.0190g4o1li681f18f0x7m12uu5jr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0190g4o1li681f18f0x7m12uu5jr'>
+            <column datatype='real' default-format='n#,##0;-#,##0' name='[COVID-19 Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[COVID-19 Deaths]' derivation='Sum' name='[sum:COVID-19 Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='member' level='[none:State:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]' direction='DESC' using='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' />
+          <slices>
+            <column>[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' scope='rows' value='Deaths' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]</rows>
+        <cols>[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{12E17C80-495E-4370-A2D0-1E10AE51BA9E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Analysis Story' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>COVID-19 Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+        <style-rule element='story-description'>
+          <format attr='background-color' id='story-description_6' value='#000000d9' />
+          <format attr='background-color' id='story-description_7' value='#ddebf0d9' />
+          <format attr='background-color' id='story-description_8' value='#000000d9' />
+          <format attr='background-color' id='story-description_9' value='#000000d9' />
+          <format attr='color' value='#000000' />
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='border-width' value='5' />
+          <format attr='background-color' id='story-description_10' value='#000000d9' />
+          <format attr='background-color' id='story-description_11' value='#000000d9' />
+        </style-rule>
+        <style-rule element='story-point-caption'>
+          <format attr='background-color' value='#e15759' />
+        </style-rule>
+        <style-rule element='story-title'>
+          <format attr='background-color' value='#00000000' />
+          <format attr='font-family' value='Tableau Bold' />
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='1' param='vert' removable='false' type-v2='layout-flow' w='99064' x='468' y='926'>
+            <zone h='3819' id='3' type-v2='title' w='99064' x='468' y='926' />
+            <zone h='11690' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99064' x='468' y='4745' />
+            <zone h='82639' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99064' x='468' y='16435'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='1. Introduction to the Project' captured-sheet='Introduction' id='1' />
+                  <story-point caption='2. Initial Data Exploration' captured-sheet='Geographical' id='2' />
+                  <story-point caption='3. Monthly analysis' captured-sheet='Montly Death' id='3' />
+                  <story-point caption='4. Condition Analysis' captured-sheet='Conditions' id='4' />
+                  <story-point caption='Insights, recommendations and further Analysis' captured-sheet='Insights' id='5' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='23651' hidden='true' id='6' story-point-id='1' type-v2='text' w='33268' x='64272' y='20643'>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontname='Calibri' fontsize='22'>Analysis of COVID-19 Data</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#4e79a7' fontname='Calibri'>This presentation explores various aspects of COVID-19 data, focusing on conditions contributing to COVID-19 deaths, correlations between conditions, geographical analysis of death rates, and statistical and machine learning analyses. The data contains information on death for 2020.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='29514' hidden='true' id='7' story-point-id='1' type-v2='text' w='33821' x='64307' y='52894'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Calibri' fontsize='18'>Introduction to the Problem</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Arial' fontsize='12'>Research Focus: </run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Arial' fontsize='12'>Analyzing conditions contributing to COVID-19 deaths across different demographics and locations in the United States. Understanding these factors helps public health officals and policymakers target interventions effectively.</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Arial' fontsize='12'>Importance: </run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Arial' fontsize='12'>The COVID-19 pandemic significantly impacted global health. Insights into contributing conditions guide targeted health interventions and policy decisions to reduce mortality rates and improve public health outcomes.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='5671' hidden='true' id='8' story-point-id='1' type-v2='text' w='33294' x='14219' y='66204'>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontsize='10'>Click on the image below for the data source</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='18866' hidden='true' id='9' story-point-id='2' type-v2='text' w='43651' x='1287' y='58102'>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontname='Tableau Regular' fontsize='12'>From the population and death maps above, we can clearly see that there is a close relation. The more the population, the more deaths. Also, from the bar chart beside, we see that there is a relation ship between age-group and number of deaths. The older the population, the more prone they are to be affected.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='30324' hidden='true' id='10' story-point-id='4' type-v2='text' w='33294' x='52136' y='28125'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#ffffff' fontname='Tableau Medium'>When we did an analysis on pre-existing conditions which can affect the patients even more, we find that patients with the following conditions are more prone to the virus:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#ffffff' fontname='Tableau Medium'>1. Influenza and pneumonia</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#ffffff' fontname='Tableau Medium'>2. Cardiovascular disease</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#ffffff' fontname='Tableau Medium'>3. Ischemic heart disease </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#ffffff' fontname='Tableau Medium'>4. Diabetes</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#ffffff' fontname='Tableau Medium'>5 Hypertension</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='10'>(PS: Click on the bars to see number of deaths)</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='16898' hidden='true' id='11' story-point-id='5' type-v2='text' w='19778' x='41194' y='69329'>
+          <formatted-text>
+            <run fontcolor='#ffffff'>Click on the images for the detailed analysis in GitHub</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{009AE881-4B0D-4279-BE64-F597A9BE3268}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Conditions'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Covid_2020 (2)' name='federated.0190g4o1li681f18f0x7m12uu5jr' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0190g4o1li681f18f0x7m12uu5jr'>
+        <column datatype='string' name='[Condition Group]' role='dimension' type='nominal' />
+        <column-instance column='[Condition Group]' derivation='None' name='[none:Condition Group:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='926'>
+            <zone h='98148' id='5' type-v2='layout-basic' w='89702' x='468' y='926'>
+              <zone h='98148' id='3' name='Condition Vs Death' w='89702' x='468' y='926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98148' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='926'>
+              <zone h='32292' id='8' name='Condition Vs Death' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Condition Group:nk]' type-v2='filter' w='9362' x='90170' y='926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12269' id='9' name='Condition Vs Death' pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' type-v2='size' w='9362' x='90170' y='33218'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7523' id='10' name='Condition Vs Death' pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' type-v2='color' w='9362' x='90170' y='45487'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98148' id='13' param='vert' type-v2='layout-flow' w='99064' x='468' y='926'>
+                <zone h='32292' id='8' mode='checkdropdown' name='Condition Vs Death' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Condition Group:nk]' type-v2='filter' w='9362' x='90170' y='926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98148' id='3' is-fixed='true' name='Condition Vs Death' w='89702' x='468' y='926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12269' id='9' name='Condition Vs Death' pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' type-v2='size' w='9362' x='90170' y='33218'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7523' id='10' name='Condition Vs Death' pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' type-v2='color' w='9362' x='90170' y='45487'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6C390EE1-1DE3-4B17-9504-253033E77464}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Geographical'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='8' param='horz' type-v2='layout-flow' w='99064' x='468' y='926'>
+            <zone h='98148' id='6' type-v2='layout-basic' w='89702' x='468' y='926'>
+              <zone h='24537' id='3' is-centered='0' type-v2='bitmap' w='44850' x='468' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49074' id='5' name='Population' w='44850' x='468' y='926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49074' id='10' name='Death' w='44852' x='45318' y='926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24537' id='12' name='State Deaths' w='89702' x='468' y='74537'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24537' id='14' name='Age Group Deaths' w='44852' x='45318' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98148' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='926'>
+              <zone h='7523' id='9' name='Population' pane-specification-id='0' param='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:Population:qk]' type-v2='color' w='9362' x='90170' y='926'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7523' id='11' name='Death' pane-specification-id='0' param='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:COVID-19 Deaths:qk]' type-v2='color' w='9362' x='90170' y='8449'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='83102' id='13' name='State Deaths' pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]' type-v2='color' w='9362' x='90170' y='15972'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98148' id='17' param='vert' type-v2='layout-flow' w='99064' x='468' y='926'>
+                <zone fixed-size='280' h='49074' id='5' is-fixed='true' name='Population' w='44850' x='468' y='926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7523' id='9' name='Population' pane-specification-id='0' param='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:Population:qk]' type-v2='color' w='9362' x='90170' y='926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='10' is-fixed='true' name='Death' w='44852' x='45318' y='926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7523' id='11' name='Death' pane-specification-id='0' param='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:COVID-19 Deaths:qk]' type-v2='color' w='9362' x='90170' y='8449'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24537' id='3' is-centered='0' is-fixed='true' type-v2='bitmap' w='44850' x='468' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24537' id='14' is-fixed='true' name='Age Group Deaths' w='44852' x='45318' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='24537' id='12' is-fixed='true' name='State Deaths' w='89702' x='468' y='74537'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='83102' id='13' name='State Deaths' pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]' type-v2='color' w='9362' x='90170' y='15972'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F0754010-B5B3-4D6A-95F9-C827DD9F66EB}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Insights'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='49074' id='3' type-v2='text' w='49532' x='468' y='926'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Insights:</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ  </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>1.      Influenza and pneumonia and cardiovascular diseases are most common conditions to COVID-19 deaths across all age groups, specially older age groups affected. Some conditions like ischemic heart disease, diabadets, and renal failure are also high COVID-19 deaths in older age groups. </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>2.      Older population consistently show higher death counts for multiple conditions. </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>3.      The winter months are likely to cause a spike in the infection </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>4.      California, Texas, Florida, New Jersey, Pennsylvania are the top 5 affected states mainly because they are also the top 5 most populated states. </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ  </run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Recommendations:</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ  </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>1.      Allocate more resources to areas which have more population </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>2.      General population should be more careful during winter months </run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>3.      People with pre-existing conditions as mentioned above should be extra careful  </run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='49074' id='5' type-v2='text' w='49532' x='50000' y='926'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>For the tech-savvy people, the following further analysis was done:</run>
+              <run>Æ&#10;&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Correlation Analysis:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Strong positive correlation between COVID-19 deaths and the number of mentions of specific conditions on death certificates.</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Conditions like Influenza and pneumonia, Vascular and unspecified dementia, Diabetes, and Ischemic heart disease show significant correlations with COVID-19 deaths.</run>
+              <run>Æ&#10;&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Geographical Analysis:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>High total COVID-19 deaths in populous states like California, Texas, and Florida.</run>
+              <run>Æ&#10;&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Linear Regression Analysis:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Linear regression model shows a strong fit with an R-squared value of 0.975, indicating that 97.5% of the variance in COVID-19 deaths can be explained by the number of mentions of conditions.</run>
+              <run>Æ&#10;&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Cluster Analysis:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>K-means clustering identified four clusters representing varying levels of COVID-19 impact.</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Clusters ranged from minimal to very high impact, providing a structured way to interpret the data that can aid in targeted public health responses.</run>
+              <run>Æ&#10;&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Time Series Analysis:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Time series analysis identified line chart monthly data of COVID-19 death and the number of mentions of condition on death seasonality.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49074' id='6' is-centered='0' is-scaled='1' param='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/04 Analysis/Visualizations/monthly_death.png' type-v2='bitmap' url='https://github.com/SaswataBiswas1983/Covid---19-deaths-in-USA-analysis' w='49532' x='468' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49074' id='7' is-scaled='1' param='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/04 Analysis/Visualizations/covid_19_death.png' type-v2='bitmap' url='https://github.com/SaswataBiswas1983/Covid---19-deaths-in-USA-analysis' w='49532' x='50000' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98148' id='10' param='vert' type-v2='layout-flow' w='99064' x='468' y='926'>
+                <zone forceUpdate='true' h='49074' id='3' type-v2='text' w='49532' x='468' y='926'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Insights:</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ  </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>1.      Influenza and pneumonia and cardiovascular diseases are most common conditions to COVID-19 deaths across all age groups, specially older age groups affected. Some conditions like ischemic heart disease, diabadets, and renal failure are also high COVID-19 deaths in older age groups. </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>2.      Older population consistently show higher death counts for multiple conditions. </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>3.      The winter months are likely to cause a spike in the infection </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>4.      California, Texas, Florida, New Jersey, Pennsylvania are the top 5 affected states mainly because they are also the top 5 most populated states. </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ  </run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Recommendations:</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>Æ  </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>1.      Allocate more resources to areas which have more population </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>2.      General population should be more careful during winter months </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='10'>3.      People with pre-existing conditions as mentioned above should be extra careful  </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='49074' id='5' type-v2='text' w='49532' x='50000' y='926'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>For the tech-savvy people, the following further analysis was done:</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Correlation Analysis:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Strong positive correlation between COVID-19 deaths and the number of mentions of specific conditions on death certificates.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Conditions like Influenza and pneumonia, Vascular and unspecified dementia, Diabetes, and Ischemic heart disease show significant correlations with COVID-19 deaths.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Geographical Analysis:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>High total COVID-19 deaths in populous states like California, Texas, and Florida.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Linear Regression Analysis:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Linear regression model shows a strong fit with an R-squared value of 0.975, indicating that 97.5% of the variance in COVID-19 deaths can be explained by the number of mentions of conditions.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Cluster Analysis:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>K-means clustering identified four clusters representing varying levels of COVID-19 impact.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Clusters ranged from minimal to very high impact, providing a structured way to interpret the data that can aid in targeted public health responses.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Time Series Analysis:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Medium' fontsize='10'>Time series analysis identified line chart monthly data of COVID-19 death and the number of mentions of condition on death seasonality.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='6' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/04 Analysis/Visualizations/monthly_death.png' type-v2='bitmap' url='https://github.com/SaswataBiswas1983/Covid---19-deaths-in-USA-analysis' w='49532' x='468' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='7' is-fixed='true' is-scaled='1' param='C:/Users/Lenovo/Desktop/Career Foundry/Achievement 6/04 Analysis/Visualizations/covid_19_death.png' type-v2='bitmap' url='https://github.com/SaswataBiswas1983/Covid---19-deaths-in-USA-analysis' w='49532' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1FA38912-F16E-4273-96D5-C2F5566FB68F}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Introduction'>
+      <style />
+      <size maxheight='768' maxwidth='1024' minheight='768' minwidth='1024' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='8' param='horz' type-v2='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='97916' id='6' type-v2='layout-basic' w='98438' x='781' y='1042'>
+              <zone h='3714' id='3' is-centered='0' type-v2='bitmap' w='98438' x='781' y='95244'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48958' id='5' name='Intro' w='98438' x='781' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45244' id='10' param='C:/Users/Lenovo/Desktop/Corona.png' type-v2='bitmap' url='https://catalog.data.gov/dataset/conditions-contributing-to-deaths-involving-coronavirus-disease-2019-covid-19-by-age-group/resource/8b7317ff-1c37-4098-ad60-84d8e22187c1' w='98438' x='781' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='13' param='vert' type-v2='layout-flow' w='98438' x='781' y='1042'>
+                <zone fixed-size='280' h='48958' id='5' is-fixed='true' name='Intro' w='98438' x='781' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45244' id='10' is-fixed='true' param='C:/Users/Lenovo/Desktop/Corona.png' type-v2='bitmap' url='https://catalog.data.gov/dataset/conditions-contributing-to-deaths-involving-coronavirus-disease-2019-covid-19-by-age-group/resource/8b7317ff-1c37-4098-ad60-84d8e22187c1' w='98438' x='781' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='21' h='3714' id='3' is-centered='0' is-fixed='true' type-v2='bitmap' w='98438' x='781' y='95244'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{37255419-A90B-49CC-88EF-AA3AD5BFB423}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Montly Death'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='70486' id='3' name='Month Death' w='99064' x='468' y='28588'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='27662' id='5' type-v2='text' w='99064' x='468' y='926'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>The month on month data shows a significant pattern for 2020. We see a huge spike in April which shows when the Virus hit. Then we see a decline due to the restrictions imposed. However, there is a huge spike in the winter which clearly indicates that we have to allocate more resources and the population as a whole should be more careful during these months.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98148' id='8' param='vert' type-v2='layout-flow' w='99064' x='468' y='926'>
+                <zone forceUpdate='true' h='27662' id='5' type-v2='text' w='99064' x='468' y='926'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>The month on month data shows a significant pattern for 2020. We see a huge spike in April which shows when the Virus hit. Then we see a decline due to the restrictions imposed. However, there is a huge spike in the winter which clearly indicates that we have to allocate more resources and the population as a whole should be more careful during these months.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='70486' id='3' is-fixed='true' name='Month Death' w='99064' x='468' y='28588'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{86DE9C8A-3CD9-4833-A0D0-742EAACDC0DC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Intro'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:Population:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{6B83A6EF-AA64-4DE5-95DB-AC47EF43F579}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Analysis Story'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{39344B7E-BE2F-45B7-B48C-BDA98481B6F6}' />
+    </window>
+    <window class='dashboard' name='Conditions'>
+      <viewpoints>
+        <viewpoint name='Condition Vs Death'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{14D1AD01-0767-437B-A29C-64FE51506E34}' />
+    </window>
+    <window class='worksheet' name='Condition Vs Death'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:Condition Group:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[sum:COVID-19 Deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{024C54BD-0E1A-490F-9C10-BE4E9D1E2DA8}' />
+    </window>
+    <window class='dashboard' name='Montly Death'>
+      <viewpoints>
+        <viewpoint name='Month Death'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A94E27F8-75D2-4659-9765-347AFA27F9E8}' />
+    </window>
+    <window class='worksheet' name='Month Death'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7D0311BF-D42C-4C1E-B822-52F4A29633A2}' />
+    </window>
+    <window class='dashboard' name='Geographical'>
+      <viewpoints>
+        <viewpoint name='Age Group Deaths'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Death'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Population'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='State Deaths'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F980F79A-FBFA-44B8-851B-0D4CBD852C29}' />
+    </window>
+    <window class='worksheet' name='Population'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:Population:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='16' />
+      </viewpoint>
+      <simple-id uuid='{127641FA-ACA9-4AED-A3ED-AE315D23EE3C}' />
+    </window>
+    <window class='worksheet' name='Death'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yu1iot1c8n6qm16rbtwy0s93gxa].[sum:COVID-19 Deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='16' />
+      </viewpoint>
+      <simple-id uuid='{261A3E3C-4385-4ADF-AD70-3D1058DA60BD}' />
+    </window>
+    <window class='worksheet' name='State Deaths'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0190g4o1li681f18f0x7m12uu5jr].[none:State:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D27E6FD6-EAC7-44C1-B3A0-A585B5A2342D}' />
+    </window>
+    <window class='worksheet' name='Age Group Deaths'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03C67B7B-A801-4746-8763-35A155C06BB7}' />
+    </window>
+    <window class='dashboard' name='Insights'>
+      <viewpoints />
+      <active id='6' />
+      <simple-id uuid='{7A2445AC-BB60-494E-8C19-1D3C490AA080}' />
+    </window>
+    <window class='dashboard' name='Introduction'>
+      <viewpoints>
+        <viewpoint name='Intro'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{5678DF33-12CC-4D33-ADC3-951E96130D68}' />
+    </window>
+  </windows>
+</workbook>
