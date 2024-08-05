@@ -14,7 +14,7 @@ This dataset shows health conditions and contributing causes mentioned in conjun
 2. Data: Separated into two subfolders Original Data and Prepared Data. (Only small files have been included based on GitHub's Limitations)
 3. Scripts: The Jupyter notebooks containing the coding for the analysis.
 4. Analysis: The Visualizations folder contains the visualizations used for developing and explaining insights.
-5. Sent to Client: Includes the Tableau Public storyboard as a PDF file.
+5. Sent to Client: Includes the PDF sent as final analysis.
 ## Key Questions and answers:
 ### 1. What are the most common conditions contributing to COVID-19 deaths in different age groups?
 From the categorical plots, influenza and pneumonia and cardiovascular diseases are most common conditions to COVID-19 deaths across all age groups, specially older age groups affected. Some conditions like ischemic heart disease, diabadets, and renal failure are also high COVID-19 deaths in older age groups.
