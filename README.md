@@ -37,3 +37,5 @@ Based on analysis, the most predictive factors are Number of Mentions of conditi
 ### 6. Time Series Analysis: Using Time series to see the seasonality of the top 5 Conditions leading to Covid deaths
 ## Conclusion and recommendation:
 The analysis supported the the Hypothesis that the top 5 conditions are at a high risk and allocation of medical resources should be priority for people who fall under these categories of diseases.
+
+[LINK](https://public.tableau.com/app/profile/saswata.biswas1126/viz/Covid19-AnalysisbySaswataBiswas/AnalysisStory)
